@@ -1,0 +1,164 @@
+import logging
+from typing import List, Optional
+
+
+def task_0() -> logging.Logger:
+    """
+        Write a program that creates and returns a logger named "app".
+    """
+    pass
+
+
+def task_1() -> logging.Logger:
+    """
+        Write a program that creates a logger named "app" and sets its
+        level to DEBUG. Return the logger.
+    """
+    pass
+
+
+def task_2(logger: logging.Logger) -> None:
+    """
+        Write a program that adds a StreamHandler to the given logger.
+    """
+    pass
+
+
+def task_3(logger: logging.Logger) -> None:
+    """
+        Write a program that adds a StreamHandler with a Formatter to the logger.
+        The format string should be: "%(levelname)s:%(name)s:%(message)s"
+    """
+    pass
+
+
+def task_4(logger: logging.Logger, message: str) -> None:
+    """
+        Write a program that logs the message at DEBUG level using the logger.
+    """
+    pass
+
+
+def task_5(logger: logging.Logger, message: str) -> None:
+    """
+        Write a program that logs the message at INFO level using the logger.
+    """
+    pass
+
+
+def task_6(logger: logging.Logger, message: str) -> None:
+    """
+        Write a program that logs the message at WARNING level using the logger.
+    """
+    pass
+
+
+def task_7(logger: logging.Logger, message: str) -> None:
+    """
+        Write a program that logs the message at ERROR level using the logger.
+    """
+    pass
+
+
+def task_8(logger: logging.Logger, message: str) -> None:
+    """
+        Write a program that logs the message at CRITICAL level using the logger.
+    """
+    pass
+
+
+def task_9(logger: logging.Logger) -> None:
+    """
+        Write a program that adds a filter to the logger that only allows
+        records with level WARNING or above. Implement the filter using
+        a lambda or function passed to logging.Filter-style addFilter.
+        Hint: use logger.addFilter with a callable that takes a record
+        and returns True if record.levelno >= logging.WARNING.
+    """
+    pass
+
+
+def task_10(logger: logging.Logger, filepath: str) -> None:
+    """
+        Write a program that adds a FileHandler to the logger that writes
+        to the given filepath.
+    """
+    pass
+
+
+def task_11() -> logging.Logger:
+    """
+        Write a program that creates a logger named "child" that is a child
+        of a logger named "parent". Return the child logger.
+        Hint: use the name "parent.child" to create the hierarchy.
+    """
+    pass
+
+
+def task_12(logger: logging.Logger) -> None:
+    """
+        Write a program that logs a message with extra contextual data.
+        Log at INFO level with message "User action" and pass
+        extra={"user": "alice", "action": "login"}.
+        The logger should have a handler with format:
+        "%(levelname)s:%(name)s:%(message)s:%(user)s:%(action)s"
+    """
+    pass
+
+
+def task_13(logger: logging.Logger) -> None:
+    """
+        Write a program that logs an exception using logger.exception().
+        In a try/except block, raise and catch a ValueError("test error"),
+        then call logger.exception("An error occurred").
+    """
+    pass
+
+
+def task_14(name: str, level: int) -> logging.Logger:
+    """
+        Write a program that creates a logger with the given name, sets its
+        level, adds a StreamHandler with level set to the same level, and
+        applies the format "%(levelname)s - %(message)s". Return the logger.
+    """
+    pass
+
+
+def task_15() -> logging.Logger:
+    """
+        Write a program that creates a logger named "no_propagate" and sets
+        propagate to False. Return the logger.
+    """
+    pass
+
+
+def task_16(logger: logging.Logger) -> None:
+    """
+        Write a program that removes all handlers from the given logger.
+    """
+    pass
+
+
+def task_17(logger: logging.Logger) -> int:
+    """
+        Write a program that returns the number of handlers attached
+        to the given logger.
+    """
+    pass
+
+
+def task_18(logger: logging.Logger) -> int:
+    """
+        Write a program that returns the effective level of the logger.
+        Use logger.getEffectiveLevel().
+    """
+    pass
+
+
+def task_19(logger: logging.Logger) -> bool:
+    """
+        Write a program that returns True if the logger is enabled for
+        DEBUG level messages, False otherwise.
+        Use logger.isEnabledFor().
+    """
+    pass
