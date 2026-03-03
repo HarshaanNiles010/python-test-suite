@@ -28,7 +28,7 @@ It is useful for:
 ## Prerequisites
 
 - Python 3.8+
-- pip
+- pip3
 
 ## Installation
 
@@ -37,8 +37,15 @@ It is useful for:
 git clone <repository-url>
 cd python_skill_test
 
+# Create a virtual environment
+python3 -m venv .venv
+
+# Run the virtual environment
+source .venv/bin/activate
+(or whatever the command is in your particular system)
+
 # Install dependencies
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 The only dependency is `pytest`. All task modules use the Python standard library exclusively.
@@ -75,25 +82,25 @@ def task_2(num_1: int, num_2: int) -> int:
 Run all tests across every module:
 
 ```bash
-python -m pytest tests/ -v
+python3 -m pytest tests/ -v
 ```
 
 Run tests for a single topic:
 
 ```bash
-python -m pytest tests/test_basic_task.py -v
-python -m pytest tests/test_db_task.py -v
-python -m pytest tests/test_exception_task.py -v
-python -m pytest tests/test_regex_task.py -v
-python -m pytest tests/test_logging_task.py -v
-python -m pytest tests/test_api_task.py -v
-python -m pytest tests/test_object_task.py -v
+python3 -m pytest tests/test_basic_task.py -v
+python3 -m pytest tests/test_db_task.py -v
+python3 -m pytest tests/test_exception_task.py -v
+python3 -m pytest tests/test_regex_task.py -v
+python3 -m pytest tests/test_logging_task.py -v
+python3 -m pytest tests/test_api_task.py -v
+python3 -m pytest tests/test_object_task.py -v
 ```
 
 Run a single test:
 
 ```bash
-python -m pytest tests/test_basic_task.py::test_task_2 -v
+python3 -m pytest tests/test_basic_task.py::test_task_2 -v
 ```
 
 ## Project Structure
