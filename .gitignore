@@ -1,1 +1,6 @@
 .pytest_cache
+CLAUDE.md
+.env
+.venv
+__pycache__
+.mypy_cache

@@ -4,7 +4,7 @@ A test-driven Python exercise suite designed to assess and sharpen core Python s
 
 ## Purpose
 
-This project serves as a structured skill assessment and practice environment for Python developers. It covers 7 core topics through 145 tasks and 255 automated tests, all using the Python standard library (no third-party packages beyond pytest).
+This project serves as a structured skill assessment and practice environment for Python developers. It covers 8 core topics through 165 tasks and 342 automated tests, all using the Python standard library (no third-party packages beyond pytest).
 
 It is useful for:
 
@@ -24,6 +24,7 @@ It is useful for:
 | `logging_task.py` | Logging | 20 | 21 | Loggers, handlers, formatters, filters, levels, child loggers, file logging, propagation |
 | `api_task.py` | JSON & Data Processing | 20 | 30 | json.dumps/loads, URL parsing, pagination, validation, sorting, grouping, nested access |
 | `object_task.py` | Object-Oriented Programming | 20 | 68 | Classes, inheritance, dunder methods, properties, classmethods, composition, slots, MRO |
+| `data_structure_task.py` | Data Structures & Algorithms | 20 | 87 | Stack, queue, linked list, BST, hashmap, dynamic array, heap, heapify, heap sort |
 
 ## Prerequisites
 
@@ -88,6 +89,7 @@ python -m pytest tests/test_regex_task.py -v
 python -m pytest tests/test_logging_task.py -v
 python -m pytest tests/test_api_task.py -v
 python -m pytest tests/test_object_task.py -v
+python -m pytest tests/test_data_structure_task.py -v
 ```
 
 Run a single test:
@@ -107,7 +109,8 @@ python_skill_test/
 │   ├── regex_task.py
 │   ├── logging_task.py
 │   ├── api_task.py
-│   └── object_task.py
+│   ├── object_task.py
+│   └── data_structure_task.py
 ├── tests/                 # Pytest test suites
 │   ├── test_basic_task.py
 │   ├── test_db_task.py
@@ -115,7 +118,8 @@ python_skill_test/
 │   ├── test_regex_task.py
 │   ├── test_logging_task.py
 │   ├── test_api_task.py
-│   └── test_object_task.py
+│   ├── test_object_task.py
+│   └── test_data_structure_task.py
 ├── solutions/             # Reference solutions (don't peek!)
 │   ├── basic_task_solution.py
 │   ├── db_task_solution.py
@@ -123,7 +127,8 @@ python_skill_test/
 │   ├── regex_task_solution.py
 │   ├── logging_task_solution.py
 │   ├── api_task_solution.py
-│   └── object_task_solution.py
+│   ├── object_task_solution.py
+│   └── data_structure_task_solution.py
 ├── requirements.txt
 ├── instructions.md
 └── README.md

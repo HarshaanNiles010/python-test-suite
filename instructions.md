@@ -13,7 +13,8 @@ python_skill_test/
 │   ├── regex_task.py        # Regex: search, findall, sub, split, validation
 │   ├── logging_task.py      # Logging: loggers, handlers, formatters, filters, levels
 │   ├── api_task.py          # Data & APIs: JSON, URL parsing, pagination, validation
-│   └── object_task.py       # OOP: classes, inheritance, dunder methods, properties, composition
+│   ├── object_task.py       # OOP: classes, inheritance, dunder methods, properties, composition
+│   └── data_structure_task.py  # Data structures: stack, queue, linked list, BST, hashmap, heap
 ├── tests/               # Pytest test suites
 │   ├── test_basic_task.py
 │   ├── test_db_task.py
@@ -21,7 +22,8 @@ python_skill_test/
 │   ├── test_regex_task.py
 │   ├── test_logging_task.py
 │   ├── test_api_task.py
-│   └── test_object_task.py
+│   ├── test_object_task.py
+│   └── test_data_structure_task.py
 ├── solutions/           # Reference solutions
 │   ├── basic_task_solution.py
 │   ├── db_task_solution.py
@@ -29,7 +31,8 @@ python_skill_test/
 │   ├── regex_task_solution.py
 │   ├── logging_task_solution.py
 │   ├── api_task_solution.py
-│   └── object_task_solution.py
+│   ├── object_task_solution.py
+│   └── data_structure_task_solution.py
 ├── requirements.txt
 └── instructions.md
 ```
@@ -65,6 +68,7 @@ python -m pytest tests/test_regex_task.py -v
 python -m pytest tests/test_logging_task.py -v
 python -m pytest tests/test_api_task.py -v
 python -m pytest tests/test_object_task.py -v
+python -m pytest tests/test_data_structure_task.py -v
 ```
 
 ## Task Summary
@@ -78,3 +82,4 @@ python -m pytest tests/test_object_task.py -v
 | `logging_task.py` | Logging module | 20 | 21 |
 | `api_task.py` | JSON & data processing | 20 | 30 |
 | `object_task.py` | Object-oriented programming | 20 | 68 |
+| `data_structure_task.py` | Data structures & algorithms | 20 | 87 |
