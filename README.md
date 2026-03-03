@@ -4,7 +4,7 @@ A test-driven Python exercise suite designed to assess and sharpen core Python s
 
 ## Purpose
 
-This project serves as a structured skill assessment and practice environment for Python developers. It covers 7 core topics through 145 tasks and 255 automated tests, all using the Python standard library (no third-party packages beyond pytest).
+This project serves as a structured skill assessment and practice environment for Python developers. It covers 8 core topics through 245 tasks and 355 automated tests, all using the Python standard library (no third-party packages beyond pytest).
 
 It is useful for:
 
@@ -18,6 +18,7 @@ It is useful for:
 | Module | Topic | Tasks | Tests | What You'll Practice |
 |--------|-------|-------|-------|----------------------|
 | `basic_task.py` | Fundamentals | 25 | 21 | Variables, strings, lists, dicts, loops, FizzBuzz, list comprehensions, bug fixes |
+| `more_basic_tasks.py` | Core Data Structures & Control Flow | 100 | 100 | list, set, tuple, dict, if-else, for loops, while loops, int/float/str data types |
 | `db_task.py` | SQLite Databases | 20 | 21 | Table creation, CRUD operations, joins, indexes, aggregates, schema introspection |
 | `exception_task.py` | Exception Handling | 20 | 47 | try/except/finally/else, raise, custom exceptions, chaining, decorators, nested handling |
 | `regex_task.py` | Regular Expressions | 20 | 47 | search, findall, sub, split, match, fullmatch, finditer, groups, flags, validation |
@@ -89,6 +90,7 @@ Run tests for a single topic:
 
 ```bash
 python3 -m pytest tests/test_basic_task.py -v
+python3 -m pytest tests/test_more_basic_tasks.py -v
 python3 -m pytest tests/test_db_task.py -v
 python3 -m pytest tests/test_exception_task.py -v
 python3 -m pytest tests/test_regex_task.py -v
@@ -109,6 +111,7 @@ python3 -m pytest tests/test_basic_task.py::test_task_2 -v
 python_skill_test/
 ├── problems/              # Task stubs — implement these
 │   ├── basic_task.py
+│   ├── more_basic_tasks.py
 │   ├── db_task.py
 │   ├── exception_task.py
 │   ├── regex_task.py
@@ -117,6 +120,7 @@ python_skill_test/
 │   └── object_task.py
 ├── tests/                 # Pytest test suites
 │   ├── test_basic_task.py
+│   ├── test_more_basic_tasks.py
 │   ├── test_db_task.py
 │   ├── test_exception_task.py
 │   ├── test_regex_task.py
@@ -125,6 +129,7 @@ python_skill_test/
 │   └── test_object_task.py
 ├── solutions/             # Reference solutions (don't peek!)
 │   ├── basic_task_solution.py
+│   ├── more_basic_tasks_solution.py
 │   ├── db_task_solution.py
 │   ├── exception_task_solution.py
 │   ├── regex_task_solution.py

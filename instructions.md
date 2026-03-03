@@ -8,6 +8,7 @@ A collection of Python programming exercises organized by topic. Each task file 
 python_skill_test/
 ├── problems/            # Task stubs (implement these)
 │   ├── basic_task.py        # Fundamentals: variables, strings, lists, dicts, loops
+│   ├── more_basic_tasks.py  # Core data structures & control flow: list, set, tuple, dict, if-else, for, while, int/float/str
 │   ├── db_task.py           # SQLite: tables, CRUD, joins, indexes, aggregates
 │   ├── exception_task.py    # Exceptions: try/except, raise, custom exceptions, decorators
 │   ├── regex_task.py        # Regex: search, findall, sub, split, validation
@@ -16,6 +17,7 @@ python_skill_test/
 │   └── object_task.py       # OOP: classes, inheritance, dunder methods, properties, composition
 ├── tests/               # Pytest test suites
 │   ├── test_basic_task.py
+│   ├── test_more_basic_tasks.py
 │   ├── test_db_task.py
 │   ├── test_exception_task.py
 │   ├── test_regex_task.py
@@ -24,6 +26,7 @@ python_skill_test/
 │   └── test_object_task.py
 ├── solutions/           # Reference solutions
 │   ├── basic_task_solution.py
+│   ├── more_basic_tasks_solution.py
 │   ├── db_task_solution.py
 │   ├── exception_task_solution.py
 │   ├── regex_task_solution.py
@@ -59,6 +62,7 @@ python -m pytest tests/ -v
 Run tests for a specific topic:
 ```bash
 python -m pytest tests/test_basic_task.py -v
+python -m pytest tests/test_more_basic_tasks.py -v
 python -m pytest tests/test_db_task.py -v
 python -m pytest tests/test_exception_task.py -v
 python -m pytest tests/test_regex_task.py -v
@@ -72,6 +76,7 @@ python -m pytest tests/test_object_task.py -v
 | File | Topic | Tasks | Tests |
 |------|-------|-------|-------|
 | `basic_task.py` | Python fundamentals | 25 | 21 |
+| `more_basic_tasks.py` | Core data structures & control flow | 100 | 100 |
 | `db_task.py` | SQLite databases | 20 | 21 |
 | `exception_task.py` | Exception handling | 20 | 47 |
 | `regex_task.py` | Regular expressions | 20 | 47 |
